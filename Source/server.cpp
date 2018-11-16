@@ -43,7 +43,7 @@ int main() {
 	char recvdata[30];
 	recv(as, (char*)&recvdata, sizeof(recvdata), 0);
 	cout <<"Receive data : "<< recvdata <<"\n";
-	int senddata = 20171356;
+	int senddata = 123456;
 	send(as, (char*)&senddata, 4, 0);
 	cout << "I Send data \"" << senddata<<"\"" << endl;
 	closesocket(sk);
